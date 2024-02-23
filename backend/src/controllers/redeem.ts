@@ -17,7 +17,6 @@ export const getAllTeams: RequestHandler = async (req, res, next) => {
 };
 
 export const updateTeamRedeemed: RequestHandler = async (req, res, next) => {
-  // get the team name from the request body
   const teamName = req.params.teamName;
 
   try {
