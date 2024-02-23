@@ -5,7 +5,7 @@ import Staff from '../src/models/Staff';
 
 const csvFilePath = './dbinitscripts/data/staff-id-to-team-mapping-long.csv';
 
-async function populateDatabase() {
+async function populateDb() {
 
     const isDatabaseEmpty = await Staff.countDocuments() === 0;
 
@@ -27,9 +27,9 @@ async function populateDatabase() {
       })
       .on('end', () => {
         console.log('CSV file successfully processed');
-        console.log("Database Team Collection Populating...");
+        console.log("Database Staff Collection Populating...");
       });
     }
   } 
 
-export default populateDatabase;
+export default populateDb;
