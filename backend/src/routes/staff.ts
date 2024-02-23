@@ -7,6 +7,4 @@ router.get("/", StaffController.getAllStaff);
 
 router.get("/:staffPassId", StaffController.getStaffById);
 
-// router.get("/team/:staffPassId", StaffController.getTeamByStaffId);
-
 export default router;

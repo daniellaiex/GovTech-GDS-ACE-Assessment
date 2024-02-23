@@ -13,8 +13,7 @@ async function aggregateData() {
       console.log("Database Team Populated");
       console.log("Database Redeem Collection Populating...")
 
-      // Read Team collection and aggregate team names
-      const teamNames = await Staff.aggregate([
+            const teamNames = await Staff.aggregate([
         { $group: { _id: '$team_name' } },
       ]).exec();
 
@@ -25,7 +24,6 @@ async function aggregateData() {
 
         const teamName = teamNames.map(team => team._id);
 
-        // Create Redeem collection
         teamName.forEach((name) => {
           const redeem = new Redeem({
             team_name: name,
