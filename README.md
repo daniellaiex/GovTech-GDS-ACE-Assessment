@@ -71,6 +71,10 @@ Containers running should be the following:
 - backend: Port 5000
 - frontend: Port 5173
 
+Login Details:
+- Username: santa
+- Password: hohoho
+
 ### Testing Locally 🧪
 
 Used Jest and Supertest for testing. 
