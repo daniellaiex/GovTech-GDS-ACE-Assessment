@@ -69,7 +69,7 @@ Containers running should be the following:
 - mongodb: Port 27017
 - mongo-express: Port 8081
 - backend: Port 5000
-- frontend: Port 5173
+- GDS-frontend: Port 5173
 
 Login Details:
 - Username: santa
